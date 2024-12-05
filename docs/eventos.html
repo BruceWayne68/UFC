@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC - Eventos</title>
+    <link rel="stylesheet" href="UFC.css">
+</head>
+<body>
+    <nav class="barra-navegacion">
+        <div class="logo">
+            <a href="index.html">UFC</a>
+        </div>
+        <ul class="enlaces-navegacion">
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="clasificaciones.html">Clasificaciones</a></li>
+            <li><a href="peleadores.html">Peleadores</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+        </ul>
+    </nav>
+
+    <header class="encabezado">
+        <h1>Regístrate para recibir actualizaciones</h1>
+        <p>No te pierdas los próximos eventos y noticias exclusivas.</p>
+    </header>
+
+    <main class="contenido-principal">
+        <form class="formulario-registro">
+            <h2>Formulario de Registro</h2>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono (opcional)">
+            
+            <label for="categoria">Categoría favorita:</label>
+            <select id="categoria" name="categoria">
+                <option value="libra-por-libra">Libra por Libra</option>
+                <option value="pesos-pesados">Pesos Pesados</option>
+                <option value="pesos-ligeros">Pesos Ligeros</option>
+                <option value="otros">Otros</option>
+            </select>
+            
+            <label for="mensaje">Mensaje adicional:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe algo..." rows="4"></textarea>
+            
+            <button type="submit" class="boton">Registrarse</button>
+        </form>
+    </main>
+
+    <footer class="pie-pagina">
+        <p>&copy; 2024 UFC. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
