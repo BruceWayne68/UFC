@@ -1,6 +1,137 @@
-body{
-    background-image:url("../Videos/mcgregor.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Barra de navegación */
+.barra-navegacion {
+    background-color: #202020;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.barra-navegacion .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.enlaces-navegacion {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.enlaces-navegacion a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.enlaces-navegacion a:hover {
+    color: #e63946;
+}
+
+/* Encabezado */
+.encabezado {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('encabezado.jpg') no-repeat center center/cover;
+    color: #fff;
     text-align: center;
-}   
+    padding: 70px 20px;
+}
+
+.encabezado h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.encabezado p {
+    font-size: 1.2rem;
+}
+
+/* Contenido principal */
+.contenido-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tarjeta {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+}
+
+.tarjeta h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.tarjeta p {
+    padding: 0 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.tarjeta .boton {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background: #e63946;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.tarjeta .boton:hover {
+    background: #c0273b;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Pie de página */
+.pie-pagina {
+    background-color: #202020;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+.pie-pagina p {
+    margin: 0;
+}
+
